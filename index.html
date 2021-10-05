@@ -28,6 +28,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
     <title>museum</title>
 </head>
 
@@ -50,12 +53,26 @@
                     <li><a href="#contacts">Contacts</a></li>
                 </ul>
             </nav>
+
+            <div onclick="myFunction()" class="burger-menu-icon"></div>
         </div>
     </header>
     <main class="main">
         <section class="section dark-section welcome-section">
             <div class="container welcome-container">
                 <div class="section-title">
+                    <nav id="menu" class="burger-menu">
+                        <ul>
+                            <li><a href="#visiting">Visiting</a> <img src="./assets/img/burger-menu/arrow.png" alt="">
+                            </li>
+                            <li><a href="#explore">Explore</a><img src="./assets/img/burger-menu/arrow.png" alt=""></li>
+                            <li><a href="#video">Video</a><img src="./assets/img/burger-menu/arrow.png" alt=""></li>
+                            <li><a href="#gallery">Gallery</a><img src="./assets/img/burger-menu/arrow.png" alt=""></li>
+                            <li><a href="#tickets">Tickets</a><img src="./assets/img/burger-menu/arrow.png" alt=""></li>
+                            <li><a href="#contacts">Contacts</a><img src="./assets/img/burger-menu/arrow.png" alt="">
+                            </li>
+                        </ul>
+                    </nav>
                     <h1>Welcome <br> to the Louvre</h1>
                 </div>
                 <div class="par">
@@ -69,7 +86,7 @@
 
         <section class="section" id="visiting">
             <div class="container border-bottom">
-                <h1>Virtual tour</h1>
+                <h2>Virtual tour</h2>
                 <div class="tours-container">
                     <a href="" class="tour-item">
                         <img src="./assets/img/royal-palace.jpg" alt="img">
@@ -124,10 +141,10 @@
         <section class="section dark-section explore-section" id="explore">
             <div class="container explore-container border-bottom">
                 <div class="text-block">
-                    <h1>Picture explore</h1>
+                    <h2>Picture explore</h2>
                     <div class="par-container">
-                        <p>Las Meninas is a 1656 painting by Diego Velázquez, the leading
-                            artist of the Spanish Golden Age.</p>
+                        <p>Las Meninas is a 1656 painting by Diego Velázquez, the leading artist of the Spanish Golden
+                            Age.</p>
                         <p>It was cleaned in 1984 to remove a <span>"yellow veil"</span> of dust that
                             had gathered since the previous restoration in the 19th century.</p>
                         <p>The cleaning provoked furious protests, not because the picture
@@ -146,7 +163,7 @@
         <section class="section " id="video">
             <div class="container video-container border-bottom">
                 <div class="video-colums">
-                    <h1>Video journey</h1>
+                    <h2>Video journey</h2>
                     <div class="video-par-block">
                         <p>Enter and visit one of the most famous museums
                             in the world and enjoy masterpieces such as Mona Lisa
@@ -162,7 +179,7 @@
                 </div>
 
                 <div class="control-panel">
-                    <img src="./assets/img/playIcon.png" alt="">
+                    <img src="./assets/img/playIcon.png" alt="playIcon">
                     <input type="range" value="40" min="0" max="100" step="1" class="progress">
                     <img src="./assets/img/volumeIcon.png" alt="">
                     <input type="range" value="40" min="0" max="100" step="1" class="volume-progress">
@@ -170,19 +187,19 @@
                 </div>
                 <div class="video-slider">
                     <div class="video-slider-item">
-                        <img src="./assets/img/slider-item1.jpg" alt="">
+                        <img class="video-slider-item-img" src="./assets/img/slider-item1.jpg" alt="">
                         <div class="video-slider-itemButton">
                             <img src="./assets/img/youtubePlayIcon.png" alt="image">
                         </div>
                     </div>
                     <div class="video-slider-item">
-                        <img src="./assets/img/slider-item2.jpg" alt="">
+                        <img class="video-slider-item-img" src="./assets/img/slider-item2.jpg" alt="">
                         <div class="video-slider-itemButton">
                             <img src="./assets/img/youtubePlayIcon.png" alt="image">
                         </div>
                     </div>
                     <div class="video-slider-item">
-                        <img src="./assets/img/slider-item3.jpg" alt="">
+                        <img class="video-slider-item-img" src="./assets/img/slider-item3.jpg" alt="">
                         <div class="video-slider-itemButton">
                             <img src="./assets/img/youtubePlayIcon.png" alt="image">
                         </div>
@@ -211,10 +228,8 @@
         </section>
 
         <section class="section  dark-section" id="gallery">
-
-
             <div class="container gallery-container ">
-                <h1>Art Gallery</h1>
+                <h2>Art Gallery</h2>
                 <div class="gallery">
                     <div class="gallery-column1">
                         <div class="gallery-column-item"> <img src="./assets/img/gallery/galery1.jpg" alt=""></div>
@@ -241,7 +256,7 @@
         </section>
         <section class="section" id="tickets">
             <div class="container border-bottom">
-                <h1>Buy tickets</h1>
+                <h2>Buy tickets</h2>
                 <div class="tickets-block">
                     <div class="tickets-image-block">
                         <img src="./assets/img/tikets-img.jpg" alt="">
@@ -296,33 +311,132 @@
             </div>
             <div class="bottom-background">
             </div>
-            <!-- <div class="booking-container border-bottom">
+            <div class="booking-container border-bottom">
                 <div class="tickets-info">
                     <div class="logo"></div>
-                    <h1>Booking tickets</h1>
-                    <p>Tour to Louvre</p>
+                    <h2>Booking tickets</h2>
+                    <h4>Tour to Louvre</h4>
                     <div>
                         <form action="">
-                            <input type="date">
-                            <input type="text" value="Name">
-                            <input type="text">
-                            <input type="text">
-                            <input type="text">
+                            <input class="date-field" type="date" placeholder="Date">
+                            <input class="time-field" type="time" placeholder="Time">
+                            <input class="name-field" type="text" placeholder="Name">
+                            <input class="e-mail-field" type="text" placeholder="E-mail">
+                            <input class="phone-field" type=" text" placeholder="Phone">
+                            <input class="ticket-type-field" type="text" placeholder="Ticket Type">
+
                         </form>
+                        <div class="calc-ticket-container">
+                            <h4>Entry Ticket</h4>
+                            <div class="calc-ticket-block">
+                                <div>
+                                    <p>Basic 18+ (20 €)</p>
+                                </div>
+                                <div class="calc">
+                                    <button type="button" onclick="document.getElementById('18').stepDown()">-</button>
+                                    <div class="number-container">
+                                        <input type="number" min="0" max="20" value="1" readonly class="number" id="18">
+                                    </div>
+                                    <button type="button" onclick="document.getElementById('18').stepUp()">+</button>
+                                </div>
+                            </div>
+                            <div class="calc-ticket-block">
+
+                                <div>
+                                    <p>Senior 65+ (10 €)</p>
+                                </div>
+                                <div class="calc">
+                                    <div class="calc-button-container">
+                                        <button type="button"
+                                            onclick="document.getElementById('65').stepDown()">-</button>
+                                    </div>
+
+                                    <div class="number-container">
+                                        <input type="number" min="0" max="20" value="1" readonly class="number" id="65">
+                                    </div>
+                                    <div class="calc-button-container">
+                                        <button type="button"
+                                            onclick="document.getElementById('65').stepUp()">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
                     </div>
                 </div>
-                <div class="overview">
-                    sdfsd
+                <div class="payment-container">
+                    <div class="overview">
+                        <div>
+                            <h3>Overview</h3>
+                            <h4>Tour to Louvre</h4>
+
+                            <div class="ticket-time-block-item">
+                                <div><img src="./assets/img/tickets-booking/date.png" alt=""></div>
+                                <div>Friday, August 19</div>
+                            </div>
+
+                            <div class="ticket-time-block-item">
+                                <div><img src="./assets/img/tickets-booking/time.png" alt=""></div>
+                                <div>16:30</div>
+                            </div>
+                            <div class="ticket-time-block-item">
+                                <div><img src="./assets/img/tickets-booking/temp.png" alt=""></div>
+                                <div>Temporary exhibition</div>
+
+                            </div>
+                        </div>
+                        <div>
+                            <img src="./assets/img/tickets-booking/louvre.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="calculating-block">
+                        <div class="purchase-items-block">
+                            <div class="purchase-item">
+                                <div class="purchase-item-name">
+                                    <div class="purchase-item-name-quantity">
+                                        2
+                                    </div>
+                                    <div>
+                                        Basic (20 €)
+                                    </div>
+                                </div>
+                                <div class="purchase-item-price">40$</div>
+                            </div>
+                            <div class="purchase-item">
+                                <div class="purchase-item-name">
+                                    <div class="purchase-item-name-quantity">
+                                        2
+                                    </div>
+                                    <div>
+                                        Senior (10 €)
+                                    </div>
+                                </div>
+                                <div class="purchase-item-price">20$</div>
+                            </div>
+
+                        </div>
+                        <div class="total-block">
+                            <div>Total</div>
+                            <div>60 €</div>
+                        </div>
+
+                    </div>
+                    <div class="credit-card-backside"></div>
+                    <div class="credit-card"></div>
+                    <div class="book-button"><a href="">Book</a></div>
+
+
+
                 </div>
+            </div>
 
 
 
-            </div> -->
+            </div>
         </section>
         <section class="section" id="contacts">
             <div class="container contacts-container border-bottom">
-                <h1>Contacts</h1>
+                <h2>Contacts</h2>
                 <div class="contacts-block">
                     <div class="adress-container">
                         <h3>Palais Royal <br> Musee du Louvre</h3>
@@ -375,8 +489,8 @@
         </div>
         <div class="developerInfo container">
             <a href="">© 2021</a>
-            <a href="">The Rolling Scopes School</a>
-            <a href="">Vladimir Kozinsky</a>
+            <a href="https://rs.school/">The Rolling Scopes School</a>
+            <a href="https://github.com/Vladimir-Kozinsky">Vladimir Kozinsky</a>
         </div>
     </footer>
     <script>
@@ -391,6 +505,12 @@
             const value = this.value;
             this.style.background = `linear-gradient(to right, #710707 0%, #710707 ${value}%, #C4C4C4 ${value}%, white 100%)`
         })
+
+        function burgerMenu() {
+
+            return alert('privet')
+            document.getElementById('menu').style.left = 20 + 'px'
+        }
     </script>
 </body>
 
